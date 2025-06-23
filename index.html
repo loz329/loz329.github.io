@@ -1,9 +1,55 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>SLEEP in September</title>
+        <link rel="stylesheet" href="./resources/index.css">
+    </head>
 
-<body>
-  <h1>Linda</h1>
-  <p>Welcome to my website!</p>
-  <img src="https://content.codecademy.com/articles/github-pages-via-web-app/happy-ice-cream.gif" />
+
+    <body>
+        <header class="banner">
+            <p>SLEEP in September 2025</p>
+        </header>
+
+        <main>   
+        <div class="intro">
+        <h1>Welcome to the SLEEP cheat sheet</h1>
+            </div>
+        <form id="sleep-form">
+            <div class="input-and-buttons">
+            <div class="form-input">
+                <h3>Input the example below:</h3>
+                <textarea class="input-text" rows="6" cols="26"></textarea>
+                <h3>Link:</h3>
+                <input class="link" type="text">
+                <h3>Comments:</h3>
+                <textarea class="comments" rows="6" cols="26"></textarea>
+        </div>
+        
+        <div class="button-column">
+                        <button class="choice1" type="submit" name="category" value="spelling">Spelling, punctuation and grammar</button>  
+                        <button class="choice2" type="submit" name="category" value="house-style">House style</button>
+                        <button class="choice3" type="submit" name="category" value="clarity">Clarity and brevity</button>
+                        <button class="choice4" type="submit" name="category" value="factual">Factual errors</button>
+                        <button class="choice5" type="submit" name="category" value="organisation">Organisation</button>  
+                        <button class="choice6" type="submit" name="category" value="misc">Miscellaneous extras and full texts</button>
+                    </div>
+                </div>
+            </form>
+        </main>
+    <script>
+    document.getElementById('sleep-form').addEventListener('submit', function(e) {
+    e.preventDefault(); // Prevents page reload
+
+    // Optionally, handle the form data here
+
+    // Clear the form fields for next use
+    this.reset();
+
+    alert('Form submitted! (But page will not reload)');
+    });
+    </script>
 </body>
-
 </html>
